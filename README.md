@@ -52,7 +52,7 @@ Point your skill loader at the `write-sharp/` directory, or fetch `write-sharp/S
 Frameworks that don't read the `SKILL.md` format can still use the skill — it's just instructions. Load the **combined single file** [`dist/write-sharp.md`](dist/write-sharp.md) as system / instruction context. It contains the full skill in one block.
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/iamnocoder/write-sharp-skill/main/dist/write-sharp.md -o write-sharp.md
+curl -fsSL https://raw.githubusercontent.com/iamnocoder/thought-leadership-content-writing/main/dist/write-sharp.md -o write-sharp.md
 ```
 
 ---

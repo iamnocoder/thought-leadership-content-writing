@@ -1,4 +1,4 @@
-# write-sharp
+# thought-leadership-content-writing
 
 A content standard for external-facing marketing and thought-leadership writing.
 It combines a **narrative framework** (story structure, emotional chemistry, positioning, opening mechanics, voice) with **AI-pattern removal** (passive voice, binary contrasts, throat-clearing, false agency) — applied in three phases: a pre-write brief, drafting craft rules, and a post-write critique.
@@ -7,7 +7,7 @@ It is packaged as an [Agent Skill](https://docs.anthropic.com/en/docs/agents-and
 
 - **Author:** Sailesh Mishra · [LinkedIn](https://www.linkedin.com/in/saileshmishra-aisecurity/)
 - **License:** [CC BY 4.0](LICENSE) — free to use and adapt, including commercially, **with attribution**.
-- **Current version:** see [`VERSION`](VERSION) / [latest release](https://github.com/iamnocoder/write-sharp-skill/releases/latest)
+- **Current version:** see [`VERSION`](VERSION) / [latest release](https://github.com/iamnocoder/thought-leadership-content-writing/releases/latest)
 
 > **Always use the latest release.** Older tags remain visible for history, but the canonical, supported version is whatever `releases/latest` points to.
 
@@ -27,8 +27,8 @@ It is packaged as an [Agent Skill](https://docs.anthropic.com/en/docs/agents-and
 Copy the skill folder into your skills directory:
 
 ```bash
-git clone https://github.com/iamnocoder/write-sharp-skill.git
-cp -R write-sharp-skill/write-sharp ~/.claude/skills/write-sharp
+git clone https://github.com/iamnocoder/thought-leadership-content-writing.git
+cp -R thought-leadership-content-writing/write-sharp ~/.claude/skills/write-sharp
 ```
 
 Then in Claude Code, type `/write-sharp` (or just ask it to write/review marketing content and it will trigger automatically).
@@ -36,12 +36,12 @@ Then in Claude Code, type `/write-sharp` (or just ask it to write/review marketi
 To update later:
 
 ```bash
-cd write-sharp-skill && git pull
+cd thought-leadership-content-writing && git pull
 cp -R write-sharp ~/.claude/skills/write-sharp
 ```
 
 ### Claude.ai / Claude apps / Cowork (Skills)
-1. Download the latest release `.zip` from the [Releases page](https://github.com/iamnocoder/write-sharp-skill/releases/latest).
+1. Download the latest release `.zip` from the [Releases page](https://github.com/iamnocoder/thought-leadership-content-writing/releases/latest).
 2. Unzip it; inside is a `write-sharp/` folder containing `SKILL.md`.
 3. Upload that folder where the product accepts custom skills.
 
@@ -63,21 +63,21 @@ Because the repo is public, GitHub already exposes it as an API. Nothing to host
 
 **Get the latest version number and release metadata:**
 ```bash
-curl -s https://api.github.com/repos/iamnocoder/write-sharp-skill/releases/latest
+curl -s https://api.github.com/repos/iamnocoder/thought-leadership-content-writing/releases/latest
 ```
 The JSON includes `tag_name` (e.g. `v1.0.0`) and a `zipball_url` to download that exact version.
 
 **Read machine-readable metadata** (name, version, file list):
 ```bash
-curl -s https://raw.githubusercontent.com/iamnocoder/write-sharp-skill/main/manifest.json
+curl -s https://raw.githubusercontent.com/iamnocoder/thought-leadership-content-writing/main/manifest.json
 ```
 
 **Fetch the skill content directly:**
 ```bash
 # the entry point
-curl -s https://raw.githubusercontent.com/iamnocoder/write-sharp-skill/main/write-sharp/SKILL.md
+curl -s https://raw.githubusercontent.com/iamnocoder/thought-leadership-content-writing/main/write-sharp/SKILL.md
 # the whole skill as one file
-curl -s https://raw.githubusercontent.com/iamnocoder/write-sharp-skill/main/dist/write-sharp.md
+curl -s https://raw.githubusercontent.com/iamnocoder/thought-leadership-content-writing/main/dist/write-sharp.md
 ```
 
 > Tip: fetching from `main` always returns the most recent committed version. Fetching from a tag (e.g. `.../v1.0.0/...`) pins a specific version.

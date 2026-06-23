@@ -1,0 +1,23 @@
+{
+  "name": "write-sharp",
+  "version": "1.0.0",
+  "description": "Content standard for external-facing marketing and thought leadership content. Combines a narrative framework (story structure, emotional chemistry, positioning) with AI-pattern removal (passive voice, binary contrasts, throat-clearing, false agency).",
+  "author": "Sailesh Mishra",
+  "license": "CC-BY-4.0",
+  "format": "anthropic-agent-skill",
+  "entrypoint": "write-sharp/SKILL.md",
+  "combined_build": "dist/write-sharp.md",
+  "files": [
+    "write-sharp/SKILL.md",
+    "write-sharp/references/brand-layer.md",
+    "write-sharp/references/craft-rules.md",
+    "write-sharp/references/examples.md",
+    "write-sharp/references/opening-mechanics.md",
+    "write-sharp/references/post-write-critique.md",
+    "write-sharp/references/pre-write-brief.md",
+    "write-sharp/references/principles.md",
+    "write-sharp/references/red-flags.md",
+    "write-sharp/references/structures.md",
+    "write-sharp/references/voice-register.md"
+  ]
+}
